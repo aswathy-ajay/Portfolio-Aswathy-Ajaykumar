@@ -53,7 +53,7 @@ section {
 }
 
 #hero {
-  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  background: linear-gradient(to right, #fff1d2, #fcb69f);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -73,10 +73,10 @@ section {
 #about, #experience, #education, #projects, #extras {
   background-color: #f9f9f9;
 }
-#experience { background-color: #f0f0f0; }
-#education { background-color: #e8e8e8; }
-#projects  { background-color: #f0f8ff; }
-#extras    { background-color: #fffaf0; }
+#experience { background-color:#fff1d2, #fcb69f; }
+#education { background-color: #fff1d2, #fcb69f; }
+#projects  { background-color: #fff1d2, #fcb69f; }
+#extras    { background-color: #fff1d2, #fcb69f; }
 
 h2 {
   margin-bottom: 20px;
