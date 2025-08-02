@@ -205,3 +205,20 @@ h2 {
   font-size: 0.85rem;
 }
 
+
+
+@media (max-width: 768px) {
+  .experience-row,
+  .experience-row.right,
+  .experience-row.left {
+    flex-direction: column !important;
+    align-items: center;
+    text-align: center;
+  }
+
+  .exp-logo {
+    margin-bottom: 10px;
+  }
+}
+
+
