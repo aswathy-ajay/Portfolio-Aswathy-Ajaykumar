@@ -5,9 +5,11 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
+  padding-top: 70px; 
 }
 
 
