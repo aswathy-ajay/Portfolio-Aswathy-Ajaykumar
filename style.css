@@ -69,14 +69,22 @@ section {
   color: #444;
 }
 
-/* INDIVIDUAL SECTIONS */
-#about, #experience, #education, #projects, #extras {
-  background-color: linear-gradient(to right, #fff1d2, #fcb69f);
+#about {
+  background: linear-gradient(to right, #fff1d2, #fcb69f);
 }
-#experience { background-color: linear-gradient(to right, #fff1d2, #fcb69f); }
-#education { background-color: linear-gradient(to right, #fff1d2, #fcb69f); }
-#projects  { background-color: linear-gradient(to right, #fff1d2, #fcb69f); }
-#extras    { background-color: linear-gradient(to right, #fff1d2, #fcb69f); }
+#experience {
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+}
+#education {
+  background: linear-gradient(to right, #c2e9fb, #a1c4fd);
+}
+#projects {
+  background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+}
+#extras {
+  background: linear-gradient(to right, #fdfbfb, #ebedee);
+}
+
 
 h2 {
   margin-bottom: 20px;
