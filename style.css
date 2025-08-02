@@ -13,28 +13,35 @@ body {
 
 header {
   position: fixed;
-  width: 100%;
   top: 0;
   left: 0;
+  width: 100%;
   background-color: white;
   border-bottom: 1px solid #ccc;
-  z-index: 1000;
+  z-index: 999;
 }
-nav ul {
-  display: flex;
+
+.nav-list {
+  list-style: none; 
+  display: flex; 
   justify-content: center;
-  list-style: none;
+  align-items: center;
   padding: 15px 0;
+  margin: 0;
 }
-nav ul li {
-  margin: 0 15px;
+
+.nav-list li {
+  margin: 0 20px;
 }
-nav ul li a {
+
+.nav-list a {
   text-decoration: none;
-  color: #333;
   font-weight: bold;
+  color: #333;
+  transition: color 0.3s;
 }
-nav ul li a:hover {
+
+.nav-list a:hover {
   color: #007acc;
 }
 
