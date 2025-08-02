@@ -26,34 +26,23 @@
     <p>Software Engineer</p>
   </section>
 
-  
-  <section id="about">
-    <href="about.html">
-  </section>
+  <div id="about"></div>
+  <div id="experience"></div>
+  <div id="education"></div>
+  <div id="projects"></div>
+  <div id="extras"></div>
 
-  
-  <section id="experience">
-    <h2>Experience</h2>
-    <p>Include jobs, internships, what you worked on, etc.</p>
-  </section>
-
-  
-  <section id="education">
-    <h2>Education</h2>
-    <p>Include your degrees, universities, years, achievements.</p>
-  </section>
-
-  
-  <section id="projects">
-    <h2>Projects</h2>
-    <p>List your key projects with links and descriptions.</p>
-  </section>
-
-
-  <section id="extras">
-    <h2>Extra-Curriculars</h2>
-    <p>Include leadership roles, clubs, volunteering, etc.</p>
-  </section>
+  <!-- JS to load sections -->
+  <script>
+    const sections = ['about', 'experience', 'education', 'projects', 'extras'];
+    sections.forEach(section => {
+      fetch(`sections/${section}.html`)
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById(section).innerHTML = data;
+        });
+    });
+  </script>
 
 </body>
 </html>
