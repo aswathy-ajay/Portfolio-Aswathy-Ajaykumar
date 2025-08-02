@@ -71,12 +71,12 @@ section {
 
 /* INDIVIDUAL SECTIONS */
 #about, #experience, #education, #projects, #extras {
-  background-color: #fff1d2, #fcb69f;
+  background-color: linear-gradient(to right, #fff1d2, #fcb69f);
 }
-#experience { background-color: #fff1d2, #fcb69f; }
-#education { background-color: #fff1d2, #fcb69f; }
-#projects  { background-color: #fff1d2, #fcb69f; }
-#extras    { background-color: #fff1d2, #fcb69f; }
+#experience { background-color: linear-gradient(to right, #fff1d2, #fcb69f); }
+#education { background-color: linear-gradient(to right, #fff1d2, #fcb69f); }
+#projects  { background-color: linear-gradient(to right, #fff1d2, #fcb69f); }
+#extras    { background-color: linear-gradient(to right, #fff1d2, #fcb69f); }
 
 h2 {
   margin-bottom: 20px;
