@@ -53,7 +53,7 @@ section {
 }
 
 #hero {
-  background: linear-gradient(to right, #fff1d2, #fcb69f);
+  background: linear-gradient(to bottom, #e0f7fa, #b2ebf2);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -70,19 +70,23 @@ section {
 }
 
 #about {
-  background: linear-gradient(to right, #fff1d2, #fcb69f);
+  background: linear-gradient(to bottom, #b2ebf2, #80deea);
 }
+
 #experience {
-  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+  background: linear-gradient(to bottom, #80deea, #4dd0e1);
 }
+
 #education {
-  background: linear-gradient(to right, #c2e9fb, #a1c4fd);
+  background: linear-gradient(to bottom, #4dd0e1, #26c6da);
 }
+
 #projects {
-  background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+  background: linear-gradient(to bottom, #26c6da, #00bcd4);
 }
+
 #extras {
-  background: linear-gradient(to right, #fdfbfb, #ebedee);
+  background: linear-gradient(to bottom, #00bcd4, #00acc1);
 }
 
 
