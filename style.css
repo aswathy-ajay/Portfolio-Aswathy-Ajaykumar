@@ -334,14 +334,16 @@ h2 {
 
 
 
-.education-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-  max-width: 1000px;
-  margin: auto;
+#education {
+  background: linear-gradient(to bottom, #90caf9, #64b5f6);
   padding: 40px 20px;
+  min-height: 100vh;
+}
+
+.education-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
 
@@ -398,24 +400,16 @@ h2 {
 }
 
 .education-entry {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  background: white;
-  padding: 20px 30px;
-  border-radius: 40px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 900px;
+  padding: 15px 20px;
+  border-radius: 30px;
+  max-width: 850px;
 }
 
 .education-logo {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  overflow: hidden;
-  flex-shrink: 0;
+  width: 55px;
+  height: 55px;
 }
+
 
 .education-logo img {
   width: 100%;
@@ -504,6 +498,9 @@ h2 {
     object-position: center center;
   }
 
+  .education-container {
+    grid-template-columns: 1fr;
+  }
   
 
 
