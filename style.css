@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.6;
   padding-top: 70px; 
 }
@@ -53,9 +53,10 @@ section {
 }
 
 #hero {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
+  background: linear-gradient(to bottom right, #1b1f3b, #2c2f5b);
+  color: #ffffff;
+  padding: 80px 20px;
+  text-align: center;
 }
 
 .slideshow-container {
