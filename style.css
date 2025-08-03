@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 html, body {
@@ -12,12 +11,17 @@ html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
-html, body {
-  overflow-x: hidden; 
-  width: 100%;
+
+body {
+  background: linear-gradient(to bottom, #cfd9df, #e2ebf0);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
+
 
 header {
   position: fixed;
@@ -73,11 +77,12 @@ section {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-  object-position: left center;
+  object-position: center center;
   position: absolute;
   top: 0;
   left: 0;
 }
+
 
 .slide {
   opacity: 0;
@@ -181,6 +186,19 @@ section {
   100% { opacity: 1; }
 }
 
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 #experience {
   background: linear-gradient(to bottom, #c8e6c9, #a5d6a7);
@@ -199,8 +217,19 @@ section {
 }
 
 section {
-  scroll-margin-top: 80px; /* prevents nav overlap */
+  scroll-margin-top: 80px;
   transition: background 0.8s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(4px);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+
+.parallax-section {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
 
 h2 {
@@ -286,6 +315,23 @@ h2 {
   font-size: 0.85rem;
 }
 
+.scroll-down {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  color: white;
+  animation: bounce 2s infinite;
+  z-index: 3;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translate(-50%, 0); }
+  50% { transform: translate(-50%, 10px); }
+}
+
+
 
 
 @media (max-width: 768px) {
@@ -327,5 +373,14 @@ h2 {
    .about-text {
     font-size: 1.1rem;
   }
+
+  .slide img,
+  .slide video {
+    object-position: center center;
+  }
+
+  
+
+
 }
 
