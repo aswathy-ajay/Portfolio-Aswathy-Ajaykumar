@@ -123,7 +123,7 @@ section {
 }
 
 #about {
-  background: linear-gradient(to bottom, #ffe66d, #fff9c4);
+  background: linear-gradient(to bottom, #e3f2fd, #bbdefb);
 }
 
 .about-container {
@@ -172,21 +172,25 @@ section {
 }
 
 #experience {
-  background: linear-gradient(to bottom, #4ecdc4, #00bfa5);
+  background: linear-gradient(to bottom, #c8e6c9, #a5d6a7);
 }
 
 #education {
-  background: linear-gradient(to bottom, #00bfa5, #009688);
+  background: linear-gradient(to bottom, #fff3e0, #ffe0b2);
 }
 
 #projects {
-  background: linear-gradient(to bottom, #ff6b6b, #ff5252);
+  background: linear-gradient(to bottom, #fce4ec, #f8bbd0);
 }
 
 #extras {
-  background: linear-gradient(to bottom, #fdf6f0, #fff0e1);
+  background: linear-gradient(to bottom, #ede7f6, #d1c4e9);
 }
 
+section {
+  scroll-margin-top: 80px; /* prevents nav overlap */
+  transition: background 0.8s ease-in-out;
+}
 
 h2 {
   margin-bottom: 20px;
