@@ -22,18 +22,28 @@
   </nav>
   </header>
 
- <section id="hero">
-    <video autoplay muted loop playsinline class="slide" id="video-slide" poster="assets/images/Intern_photo.JPG">
-    <source src="assets/images/Gdg_speech.mov" type="video/mp4" />
+ <section id="hero" class="slideshow-container">
+  <div class="slide active">
+    <video autoplay muted loop>
+      <source src="assets/videos/Gdg_speech.mov" type="video/mp4">
     </video>
-    <img src="assets/images/Bcs2.jpg" class="slide" />
-    <img src="assets/images/Grad_photo.JPG" class="slide" />
-    <img src="assets/images/Intern_photo.JPG" class="slide" />
-    <div class="hero-text">
-        <h1>Aswathy Ajaykumar</h1>
-        <p>Software Engineer</p>
-    </div>
+  </div>
+  <div class="slide">
+    <img src="assets/images/Bcs2.jpg" alt="BCS Presentation">
+  </div>
+  <div class="slide">
+    <img src="assets/images/grad_photo.jpg" alt="Graduation Day">
+  </div>
+  <div class="slide">
+    <img src="assets/images/intern_photo.jpg" alt="Internship Moment">
+  </div>
+
+  <div class="hero-overlay">
+    <h1>Aswathy Ajaykumar</h1>
+    <p>Software Engineer</p>
+  </div>
 </section>
+
 
   <div id="about"></div>
   <div id="experience"></div>
@@ -52,5 +62,17 @@
     });
   </script>
 
+<script>
+  const slides = document.querySelectorAll('.slide');
+  let current = 0;
+
+  function showNextSlide() {
+    slides[current].classList.remove('active');
+    current = (current + 1) % slides.length;
+    slides[current].classList.add('active');
+  }
+
+  setInterval(showNextSlide, 4000); // 4-second slideshow
+</script>
 </body>
 </html>
