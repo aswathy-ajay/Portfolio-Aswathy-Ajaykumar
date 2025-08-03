@@ -92,17 +92,17 @@ section {
 
 .hero-overlay {
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 3; /* Make sure it's above the image */
+  z-index: 3; 
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.6); /* Optional: background box for readability */
+  background-color: rgba(0, 0, 0, 0.6); 
   padding: 30px 60px;
   border-radius: 16px;
   backdrop-filter: blur(6px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-  color: white; /* Ensure text is visible */
+  color: white; 
 }
 
 .hero-overlay h1,
