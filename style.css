@@ -85,10 +85,14 @@ section {
 
 
 .slide {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
   opacity: 0;
+  animation: fade 20s infinite;
   transition: opacity 1.5s ease-in-out;
-  animation: fade 30s infinite;
 }
+
 
 .slide.active {
   opacity: 1;
@@ -179,12 +183,13 @@ section {
 
 
 @keyframes fade {
-  0% { opacity: 1; }
-  20% { opacity: 1; }
+  0% { opacity: 0; }
+  10% { opacity: 1; }
   25% { opacity: 1; }
-  95% { opacity: 1; }
-  100% { opacity: 1; }
+  35% { opacity: 0; }
+  100% { opacity: 0; }
 }
+
 
 .fade-in {
   opacity: 0;

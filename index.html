@@ -65,11 +65,6 @@
     slides[current].classList.remove('active');
     current = (current + 1) % slides.length;
     slides[current].classList.add('active');
-
-    if (slides[current].tagName === 'VIDEO') {
-      slides[current].currentTime = 0;
-      slides[current].play();
-    }
   }
 
   setInterval(showNextSlide, 5000);
