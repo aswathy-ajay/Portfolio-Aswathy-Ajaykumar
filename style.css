@@ -107,8 +107,8 @@ section {
 
 .about-text {
   max-width: 600px;
-  font-size: 1.5rem;   
-  line-height: 1.9;
+  font-size: 1.3rem;   
+  line-height: 1.5;
 }
 
 .about-photo img {
@@ -240,7 +240,7 @@ h2 {
     margin-bottom: 10px;
   }
    .about-text {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 
