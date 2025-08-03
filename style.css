@@ -112,6 +112,7 @@ h2 {
   display: flex;
   justify-content: center;
   margin: 60px 0;
+  min-height: 320px; 
 }
 
 .experience-row.left .experience-entry {
@@ -126,15 +127,20 @@ h2 {
 
 .experience-entry {
   display: flex;
-  background: rgba(255, 255, 255, 0.9);
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
   padding: 20px;
+  background: rgba(255, 255, 255, 0.95);
   border-radius: 10px;
   border-left: 5px solid #00acc1;
-  gap: 20px;
-  max-width: 1000px;
-  align-items: flex-start;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1000px;
+  height: 100%;
+  min-height: 280px; 
 }
+
 
 .experience-entry.right {
   border-left: none;
@@ -144,7 +150,7 @@ h2 {
 .exp-logo {
   width: 80px;
   height: auto;
-  flex-shrink: 0;
+  align-self: flex-start;
   margin-top: 5px;
 }
 
