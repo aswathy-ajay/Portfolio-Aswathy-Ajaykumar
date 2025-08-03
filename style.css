@@ -335,10 +335,15 @@ h2 {
 
 
 .education-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
   max-width: 1000px;
   margin: auto;
-  padding: 60px 20px;
+  padding: 40px 20px;
 }
+
 
 .education-timeline {
   display: flex;
@@ -390,6 +395,66 @@ h2 {
   font-size: 0.9rem;
   font-style: italic;
   color: #777;
+}
+
+.education-entry {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: white;
+  padding: 20px 30px;
+  border-radius: 40px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 900px;
+}
+
+.education-logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.education-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.education-details {
+  flex-grow: 1;
+}
+
+.education-details h3 {
+  font-size: 1.3rem;
+  margin: 0;
+  color: #0d47a1;
+}
+
+.education-details p {
+  margin: 2px 0;
+  color: #333;
+}
+
+
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.6rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #90caf9;
+  transform: scale(1.2);
 }
 
 
