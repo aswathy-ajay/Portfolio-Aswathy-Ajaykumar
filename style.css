@@ -221,8 +221,27 @@ h2 {
 }
 
 
-/* Mobile responsiveness */
+
 @media (max-width: 768px) {
+   .nav-list {
+    overflow-x: auto;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 10px;
+  }
+
+  .nav-list li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  .nav-list a {
+    padding: 6px 10px;
+    display: block;
+    white-space: nowrap;
+  }
+  
   .experience-row,
   .experience-row.left .experience-entry,
   .experience-row.right .experience-entry {
