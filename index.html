@@ -15,8 +15,8 @@
       <li><a href="#about">About</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#education">Education</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#extras">Extra-Curriculars</a></li>
+      <!-- <li><a href="#projects">Projects</a></li>
+      <li><a href="#extras">Extra-Curriculars</a></li> -->
       <li><a href="assets/cv/CV-Aswathy Ajaykumar.pdf" target="_blank">CV</a></li>
     </ul>
   </nav>
@@ -48,11 +48,12 @@
   <div id="about"></div>
   <div id="experience"></div>
   <div id="education"></div>
-  <div id="projects"></div>
-  <div id="extras"></div>
+  <!-- <div id="projects"></div>
+  <div id="extras"></div> -->
 
   <script>
-    const sections = ['about', 'experience', 'education', 'projects', 'extras'];
+    const sections = ['about', 'experience', 'education']
+    // , 'projects', 'extras'];
     sections.forEach(section => {
       fetch(`sections/${section}.html`)
         .then(res => res.text())
